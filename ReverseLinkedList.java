@@ -43,12 +43,12 @@ class LinkedList {
         Node next = null;
 
         while (current != null) {
-            next = current.next; // Store next node
-            current.next = prev; // Reverse the link
-            prev = current;      // Move prev to current
-            current = next;      // Move to next node
+            next = current.next; 
+            current.next = prev; 
+            prev = current;     
+            current = next;      
         }
-        head = prev; // Update head to the new first element
+        head = prev; 
     }
 }
 
@@ -63,11 +63,11 @@ public class ReverseLinkedList {
         list.insertAtEnd(50);
 
         System.out.println("Original Linked List:");
-        list.printList(); // Output: 10 20 30 40 50
+        list.printList();
 
         list.reverse();
 
         System.out.println("Reversed Linked List:");
-        list.printList(); // Output: 50 40 30 20 10
+        list.printList();
     }
 }
